@@ -1,0 +1,5 @@
+{{ define "main" }}
+  <header class="archive-hero"><div class="shell"><p class="eyebrow">Browse by theme</p><h1>{{ .Title }}</h1></div></header>
+  <div class="theme-cloud shell">{{ range .Data.Terms.ByCount }}<a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><small>{{ .Count }}</small></a>{{ end }}</div>
+{{ end }}
+

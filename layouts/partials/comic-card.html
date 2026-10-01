@@ -1,0 +1,13 @@
+<article class="comic-card" data-search="{{ printf "%v %s %s" .Params.verse_number .Title .Params.theme | lower }}">
+  <a class="card-art" href="{{ .RelPermalink }}">
+    {{ with .Params.comic_image }}<img src="{{ . | relURL }}" alt="{{ $.Params.comic_image_alt }}" loading="lazy">{{ else }}<span class="card-placeholder" aria-hidden="true"><i></i><b>ಕಗ್ಗ</b></span>{{ end }}
+    <span class="verse-badge">Kagga {{ .Params.verse_number }}</span>
+  </a>
+  <div class="card-copy">
+    <p class="card-theme">{{ .Params.theme }}</p>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Params.core_philosophy | default .Description | truncate 145 }}</p>
+    <a class="card-link" href="{{ .RelPermalink }}">Enter the reflection <span>→</span></a>
+  </div>
+</article>
+

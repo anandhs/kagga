@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="Kagga Bites home">
+      <span class="brand-sun" aria-hidden="true"><i></i></span>
+      <span class="brand-words"><strong>Kagga Bites</strong><small>ಕಗ್ಗದ ಒಂದು ಕಿರುನೋಟ</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span><span class="sr-only">Toggle menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      {{ range site.Menus.main }}<a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent .Menu . }} aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}
+    </nav>
+  </div>
+</header>
+

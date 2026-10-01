@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <article class="comic-page">
+    <header class="comic-header shell">
+      <div class="comic-title"><p class="eyebrow">Mankuthimmana Kagga · {{ .Params.verse_number }}</p><h1>{{ .Title }}</h1><p>{{ .Params.theme }}</p></div>
+      <div class="comic-intro"><p>{{ .Params.core_philosophy }}</p></div>
+    </header>
+
+    <div class="comic-meta shell">
+      <div><span>Signature image</span><strong>{{ .Params.signature_image }}</strong></div>
+      <div><span>Quiet ending</span><strong>{{ .Params.ending_line }}</strong></div>
+      {{ with .Params.original_url }}<a href="{{ . }}">Verified original ↗</a>{{ end }}
+    </div>
+
+    <div class="published-comic shell">
+      <div class="comic-body">{{ .Content }}</div>
+    </div>
+  </article>
+{{ end }}
+

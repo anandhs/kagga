@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <header class="archive-hero">
+    <div class="shell"><p class="eyebrow">The visual archive</p><h1>{{ .Title }}</h1><div class="archive-intro">{{ .Content }}</div></div>
+  </header>
+  <section class="archive shell">
+    {{ if .RegularPages }}
+      <div class="archive-tools"><label for="comic-filter">Find a reflection</label><input id="comic-filter" type="search" placeholder="Verse number, title, or theme" autocomplete="off"><p id="filter-status" aria-live="polite"></p></div>
+      <div class="comic-grid archive-grid" id="comic-grid">{{ range .Paginator.Pages }}{{ partial "comic-card.html" . }}{{ end }}</div>
+      {{ template "_internal/pagination.html" . }}
+    {{ else }}
+      <div class="empty-state archive-empty"><span class="empty-orbit" aria-hidden="true">✦</span><h2>No comics have been published yet.</h2><p>The collection will begin after the first verse, interpretation, and storyboard pass their quality review.</p></div>
+    {{ end }}
+  </section>
+{{ end }}
+

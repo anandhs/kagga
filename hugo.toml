@@ -1,0 +1,32 @@
+baseURL = "https://anandhs.github.io/kagga/"
+languageCode = "en-us"
+title = "Kagga Bites"
+enableRobotsTXT = true
+summaryLength = 28
+
+[params]
+  description = "Mankuthimmana Kagga, remembered through quiet watercolor comics."
+  tagline = "One Verse. One Image. A Lifetime of Reflection."
+  author = "Kagga Bites"
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  theme = "themes"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Comics"
+    pageRef = "/comics"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 20
+

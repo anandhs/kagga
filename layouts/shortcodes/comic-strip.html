@@ -1,0 +1,8 @@
+{{ with .Page.Params.comic_image }}
+  <figure class="comic-strip">
+    <img src="{{ . | relURL }}" alt="{{ $.Page.Params.comic_image_alt }}" width="1536" height="1024">
+  </figure>
+{{ else }}
+  {{ errorf "Comic post %q is missing comic_image" .Page.File.Path }}
+{{ end }}
+
