@@ -1,7 +1,7 @@
 ---
 title: "Stand"
 date: 2026-09-12
-draft: true
+draft: false
 verse_number: 288
 theme: "Moral allegiance"
 literal_meaning: "Ravana existed in Rama's time and Dushasana in Bhima's; no age is free of injustice, so become Rama's servant or ally."

@@ -1,7 +1,7 @@
 ---
 title: "Shared"
 date: 2026-09-30
-draft: true
+draft: false
 verse_number: 14
 theme: "Common humanity"
 literal_meaning: "All people live beneath one sky, tread one earth, eat grain, drink water, and breathe air in common; how, then, did hostility arise among them?"

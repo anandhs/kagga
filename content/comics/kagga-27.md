@@ -1,7 +1,7 @@
 ---
 title: "Beyond"
 date: 2026-09-30
-draft: true
+draft: false
 verse_number: 27
 theme: "Purpose beyond survival"
 literal_meaning: "What are earthly life's aim and fruit? If it is only struggle, circling, and filling the stomach, what does a human accomplish beyond animals and birds?"

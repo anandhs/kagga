@@ -1,7 +1,7 @@
 ---
 title: "Afloat"
 date: 2026-09-12
-draft: true
+draft: false
 verse_number: 750
 theme: "Engaged detachment"
 literal_meaning: "Do not drown in life: stay afloat, do good, give and receive joy, face the final call without anxiety, and remain joined to the world."

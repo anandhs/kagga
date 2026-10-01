@@ -1,7 +1,7 @@
 ---
 title: "Between"
 date: 2026-09-30
-draft: true
+draft: false
 verse_number: 15
 theme: "Loss of moral shelter"
 literal_meaning: "Old devotion and trust have faded, while no luminous new vision has appeared; the world is distressed like a disabled, sightless person whose familiar house has collapsed."

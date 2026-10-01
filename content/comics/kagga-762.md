@@ -1,7 +1,7 @@
 ---
 title: "Homeward"
 date: 2026-08-31T16:21:29-05:00
-draft: true
+draft: false
 verse_number: 762
 theme: "Guiding remembrance"
 literal_meaning: "Keep Meru as the goal of life's earthly walk; forgetting it leads downward, while remembrance of home gives strength despite distance or an impaired leg."
